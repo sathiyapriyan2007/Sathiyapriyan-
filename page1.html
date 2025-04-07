@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ticket Reservation</title>
+</head>
+<body style="font-family: Arial; background-color: #f2f2f2; padding: 30px;">
+
+  <div style="background-color: white; padding: 20px; max-width: 500px; margin: auto; border-radius: 10px;">
+    <h2 style="text-align: center;">Ticket Reservation</h2>
+    <form action="confirmation.html" method="get">
+      <label>Full Name:</label><br>
+      <input type="text" name="name" required style="width:100%; padding:8px; margin-top:5px;"><br><br>
+
+      <label>Email:</label><br>
+      <input type="email" name="email" required style="width:100%; padding:8px; margin-top:5px;"><br><br>
+
+      <label>Destination:</label><br>
+      <select name="destination" required style="width:100%; padding:8px; margin-top:5px;">
+        <option value="">Select</option>
+        <option>New York</option>
+        <option>Paris</option>
+        <option>Tokyo</option>
+        <option>London</option>
+      </select><br><br>
+
+      <label>Date:</label><br>
+      <input type="date" name="date" required style="width:100%; padding:8px; margin-top:5px;"><br><br>
+
+      <label>Tickets:</label><br>
+      <input type="number" name="tickets" min="1" max="10" required style="width:100%; padding:8px; margin-top:5px;"><br><br>
+
+      <button type="submit" style="width:100%; padding:10px; background-color:#4CAF50; color:white; border:none;">Reserve</button>
+    </form>
+  </div>
+
+</body>
+</html>
